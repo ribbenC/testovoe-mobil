@@ -1,0 +1,39 @@
+.App{
+  display: grid;
+  grid-template-areas:
+  'h h h'
+  'm m m'
+  'm m m'
+  'm m m'
+  'f f f';
+}
+.Header{
+  background-color: #b64f4f;
+  grid-area: h;
+  height: 12.5vh;
+}
+.Sidebar-MainApp{
+  grid-area: m;
+  display: grid;
+  grid-template-areas:
+  's t t t'
+  's t t t'
+  's t t t';
+  min-height: 75vh;
+}
+.Sidebar{
+  background-color: #6f00ff;
+  grid-area: s;
+  width: 15vw;
+}
+.MainApp{
+  background-color: #ffffff;
+  margin: 20px;
+  grid-area: t;
+  width: 80vw;
+}
+.Footer{
+  grid-area: f;
+  background-color: pink;
+  height: 12.5vh;
+}
